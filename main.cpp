@@ -111,7 +111,7 @@ int main(int argc, char* argv[])
         std::string outputPath = argv[3];
 
         std::string message;
-        std::getline(messageFile, message, '\0'); // TODO: upewnij się, że ten kod wczyta zawsze cały plik. ANS: Jest ok, ponieważ wczytuję pliki tekstowe
+        std::getline(messageFile, message, '\0');
 
         Mat image = imread(originalImage, IMREAD_UNCHANGED);
         if(check_image_for_errors(image))
